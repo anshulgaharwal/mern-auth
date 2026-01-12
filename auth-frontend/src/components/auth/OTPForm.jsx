@@ -1,14 +1,18 @@
-const OTPForm = ({ setStep }) => {
+import React from "react";
+
+const OTPForm = ({ onSuccess }) => {
   return (
     <>
-      <h2>Verify</h2>
+      <h2>Verify your account</h2>
+      <p>Enter the code we sent you</p>
 
-      <input placeholder="Enter OTP" />
+      <input placeholder="6-digit code" />
 
       <button
         className="primary"
         onClick={() => {
-          alert("Verified (mock)");
+          alert("Verified successfully (mock)");
+          onSuccess(); 
         }}
       >
         Verify
@@ -16,5 +20,6 @@ const OTPForm = ({ setStep }) => {
     </>
   );
 };
+
 
 export default OTPForm;

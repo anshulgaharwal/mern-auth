@@ -18,7 +18,7 @@ const AuthModal = ({ onClose }) => {
         {step === "options" && <AuthOptions setStep={setStep} />}
         {step === "email" && <EmailForm setStep={setStep} />}
         {step === "phone" && <PhoneForm setStep={setStep} />}
-        {step === "otp" && <OTPForm setStep={setStep} />}
+        {step === "otp" && <OTPForm onSuccess={onClose} />}
       </div>
     </div>
   );
