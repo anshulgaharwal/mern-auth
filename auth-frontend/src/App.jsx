@@ -1,10 +1,13 @@
 import React from 'react'
-import AuthPage from './pages/AuthPage'
+import { Route, Routes } from 'react-router-dom'
+import Landing from './pages/landing'
 
 const App = () => {
   return (
     <>
-      <AuthPage />
+    <Routes>
+      <Route path='/' element={<Landing />}/>
+    </Routes>
     </>
   )
 }
