@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.auth-container{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.auth-box{
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
