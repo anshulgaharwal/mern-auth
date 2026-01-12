@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const OTPForm = () => {
   return (
-    <div>OTPForm</div>
-  )
-}
+    <>
+      <h2>Verify OTP</h2>
+      <input placeholder="Enter OTP" />
+      <button className="primary">Verify</button>
+    </>
+  );
+};
 
-export default OTPForm
+export default OTPForm;

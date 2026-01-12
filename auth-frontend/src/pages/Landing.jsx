@@ -8,7 +8,8 @@ const Landing = () => {
     <>
     <div className="landing">
         <h1>Welcome</h1>
-        <button onClick={() => setShowAuth(true)}>
+        <button onClick={() => setShowAuth(true)}
+            className="cta">
             SignUp / Login
         </button>
     </div>
