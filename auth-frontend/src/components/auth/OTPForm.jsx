@@ -1,11 +1,18 @@
-import React from "react";
-
-const OTPForm = () => {
+const OTPForm = ({ setStep }) => {
   return (
     <>
-      <h2>Verify OTP</h2>
+      <h2>Verify</h2>
+
       <input placeholder="Enter OTP" />
-      <button className="primary">Verify</button>
+
+      <button
+        className="primary"
+        onClick={() => {
+          alert("Verified (mock)");
+        }}
+      >
+        Verify
+      </button>
     </>
   );
 };

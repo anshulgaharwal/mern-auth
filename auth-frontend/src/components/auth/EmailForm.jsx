@@ -1,12 +1,20 @@
-import React from "react";
-
-const EmailForm = () => {
+const EmailForm = ({ setStep }) => {
   return (
     <>
       <h2>Continue with email</h2>
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="password" />
-      <button className="primary" onClick={() => setStep("otp")}>Continue</button>
+
+      <input type="email" placeholder="Email address" />
+      <input type="password" placeholder="Password" />
+
+      <button
+        className="primary"
+        onClick={() => {
+          console.log("Email continue");
+          setStep("otp");
+        }}
+      >
+        Continue
+      </button>
     </>
   );
 };
