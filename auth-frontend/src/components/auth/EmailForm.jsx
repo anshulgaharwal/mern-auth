@@ -4,7 +4,13 @@ const EmailForm = ({ setStep }) => {
   const handleContinue = async () => {
     try{
       const email = document.querySelector("#email").value;
-      const data = await startAuth
+      const data = await startAuth({email});
+      if(data.next === "EMAIL_OTP"){
+        setStep("otp");
+      }
+    }
+    catch(err){
+      alert(err.message);
     }
   }
   return (
@@ -22,3 +28,7 @@ const EmailForm = ({ setStep }) => {
 };
 
 export default EmailForm;
+
+//document: represents webpage
+//querySelector finds element with id
+//value: reads the value user typed
